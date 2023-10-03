@@ -4,7 +4,6 @@ ARG command="--version"
 
 COPY entrypoint.sh /entrypoint.sh
 
-# RUN apt-get update -y
 RUN apk add --no-cache git
 
 RUN pip install "pyyaml<5.4"
